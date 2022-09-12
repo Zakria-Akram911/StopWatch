@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .stopwatch-main {
+        width: 60%;
+        margin: 0 auto;
+        border: 1px solid #f5f5f5;
+    }
+
+    body {
+        background: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 97vh;
+    }
+
+    .stopwatch-heading {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .stopwatch-btn {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .essential-btn {
+        width: 33%;
+        margin: 20px 00px;
+        text-align: center;
+    }
+
+    .essential-btn>button {
+        padding: 10px 30px;
+        font-weight: 700;
+        border: none;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .essential-btn>button:hover {
+        background: darkgrey;
+        border: none;
+        transform: scale(1.1);
+        color: white;
+        font-weight: bolder;
+    }
+
+    .calculated-time {
+        position: absolute;
+        top: 20px;
+        border: 1px solid #f5f5f5;
+        width: 20%;
+        padding: 0px 20px 20px 20px;
+        text-align: center;
+    }
+
+    .calculated-time>h6 {
+        font-size: 14px;
+        margin: 10px;
+    }
+    button{
+        position: relative;
+    }
+
+    
+</style>
+
+<body>
+
+    <div class="stopwatch-main">
+        <div class="stopwatch-heading">
+            <h1>Stopwatch</h1>
+        </div>
+        <div class="stopwatch-btn">
+            <div class="essential-btn">
+                <button class="start">Start</button>
+            </div>
+            <div class="essential-btn">
+                <button class="stop">Stop</button>
+            </div>
+            <div class="essential-btn">
+                <button class="calculate-time">Calculate Time</button>
+            </div>
+            <div class="essential-btn">
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="calculated-time">
+        <h6>Calculated Time</h6>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="stopwatch.js"></script>
+</body>
+
+</html>
